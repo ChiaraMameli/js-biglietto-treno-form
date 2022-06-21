@@ -1,0 +1,18 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    min-width: 100%;
+
+}
+
+#result {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 3rem;
+    color: #0057CE;
+    padding: 5rem;
+    border: 1px dotted #0057CE;
+
+}
