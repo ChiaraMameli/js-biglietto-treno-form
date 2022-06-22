@@ -13,27 +13,47 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="row text-center">
-        <div class="col-4">
-            <label for="anagraphics" class="d-block">Nome e Cognome</label>
-            <input type="text" id="anagraphics">
+    <div class="container d-flex align-items-center _h-100">
+        <div class="_box">
+
+            <h2 class="text-center text-white mb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div id="form" class="row text-center justify-content-around">
+                <div class="col-2">
+                    <label for="anagraphics" class="d-block mb-3">Nome e Cognome</label>
+                    <input type="text" id="anagraphics">
+                </div>
+                <div class="col-2">
+                    <label for="kilometres" class="d-block mb-3">Chilometri</label>
+                    <input type="number" id="kilometres">
+                </div>
+                <div class="col-2">
+                    <label for="age" class="d-block mb-3">Età</label>
+                    <input type="number" id="age">
+                </div>
+                <div class="col-12 align-self-center">
+                    <button type="button" class="btn btn-success mt-5 mb-5">INVIA</button>        </div>
+            </div>
+
+            <div id="ticket-section" class="d-none">
+                <h2 class="text-center text-white mb-3">IL TUO BIGLIETTO</h2>
+                
+                <div id="ticket" class="row align-items-center">
+                    <div id="anagraphics-result" class="col">
+                        <h3 class="fs-6">NOME PASSEGGERO: </h2>
+                    </div>
+                    <div id="kilometres-result" class="col" >
+                        <span>Chilometri: </span>
+                    </div>
+                    <div id="price-result" class="col" >
+                        <span>Prezzo: </span>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-        <div class="col-4">
-            <label for="kilometres" class="d-block">Chilometri</label>
-            <input type="number" id="kilometres">
-        </div>
-        <div class="col-4">
-            <label for="age" class="d-block">Età</label>
-            <input type="number" id="age">
-        </div>
-        <div class="col align-self-center">
-            <button type="button" class="btn btn-success mt-5">INVIA</button>        </div>
     </div>
 
-    
-    <div class="box">
-        <p id="result"></p>
-    </div>
 <script src="js/script.js"></script>
 </body>
 </html>
