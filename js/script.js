@@ -11,15 +11,16 @@ const fortyDiscount = parseInt(40);
 
 const resultParagraph = document.getElementById('result');
 
-const kilometresTravel = parseInt(kilometresInput.value);
-const ageTraveler = parseInt(ageInput.value);
-const anagraphics = anagraphicsInput.value;
-
 const ticketSection = document.getElementById('ticket-section');
 
 // Click
 
 sendButton.addEventListener('click', function(){
+
+const kilometresTravel = parseInt(kilometresInput.value);
+const ageTraveler = parseInt(ageInput.value);
+const anagraphics = anagraphicsInput.value;
+    
 let finalPrice = kilometresTravel * 0.21;
 
 if (!isNaN(kilometresInput) || !isNaN(ageInput)) {
@@ -49,5 +50,4 @@ ticketSection.className = '';
 
 cancelButton.addEventListener('click', function() {
     ticketSection.className = 'd-none';
- 
 })
