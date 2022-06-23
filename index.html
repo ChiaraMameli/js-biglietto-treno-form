@@ -20,18 +20,20 @@
             <div id="form" class="row text-center justify-content-around">
                 <div class="col-2">
                     <label for="anagraphics" class="d-block mb-3">Nome e Cognome</label>
-                    <input type="text" id="anagraphics">
+                    <input type="text" id="anagraphics" value="chiara">
                 </div>
                 <div class="col-2">
                     <label for="kilometres" class="d-block mb-3">Chilometri</label>
-                    <input type="number" id="kilometres">
+                    <input type="number" id="kilometres" value="50">
                 </div>
                 <div class="col-2">
                     <label for="age" class="d-block mb-3">Età</label>
-                    <input type="number" id="age">
+                    <input type="number" id="age" value="50">
                 </div>
                 <div class="col-12 align-self-center">
-                    <button type="button" class="btn btn-success mt-5 mb-5">INVIA</button>        </div>
+                    <button type="button" id="cancel" class="btn btn-secondary mt-5 mb-5">ANNULLA</button>       
+                    <button type="button" id="send" class="btn btn-success mt-5 mb-5">INVIA</button>       
+                </div>
             </div>
 
             <div id="ticket-section" class="d-none">
@@ -39,13 +41,10 @@
                 
                 <div id="ticket" class="row align-items-center">
                     <div id="anagraphics-result" class="col">
-                        <h3 class="fs-6">NOME PASSEGGERO: </h2>
                     </div>
                     <div id="kilometres-result" class="col" >
-                        <span>Chilometri: </span>
                     </div>
                     <div id="price-result" class="col" >
-                        <span>Prezzo: </span>
                     </div>
 
                 </div>
